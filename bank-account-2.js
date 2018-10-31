@@ -49,11 +49,20 @@ var marikasAccount = createAccount({
 deposit(marikasAccount, 100);
 console.log(getBalance(marikasAccount));
 
-console.log(accounts);
-// deposit(account, 1200);
+withdraw(marikasAccount, 20);
+console.log(getBalance(marikasAccount));
 
-// console.log(getBalance(account));
+var existingAccount = getAccount('mkuylman');
 
-// withdraw(account, 200);
+console.log(getBalance(marikasAccount));
 
-// console.log(getBalance(account));
+var courtneysAccount = createAccount({
+	username: 'courtney1',
+	balance: 3000
+});
+
+console.log(accounts); 
+
+var existingCourtAccount = getAccount('courtney1');
+
+console.log(existingCourtAccount);
